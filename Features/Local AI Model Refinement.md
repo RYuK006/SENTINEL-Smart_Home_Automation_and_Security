@@ -2,4 +2,4 @@
 
 Learns from the home’s own data over time, improving accuracy without sending data to the cloud.
 
-See also: [[Features Overview]]
+See also: [Features Overview](../Features%20Overview.md)

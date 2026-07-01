@@ -2,4 +2,4 @@
 
 Edge AI distinguishes between humans, animals, and vehicles.
 
-See also: [[Features Overview]]
+See also: [Features Overview](../Features%20Overview.md)
