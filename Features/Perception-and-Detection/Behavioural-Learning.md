@@ -8,6 +8,13 @@
 
 Observes daily routines over time to establish a baseline of normal household activity. This component is deeply integrated into the overarching Sentinel ecosystem, ensuring that it never operates in isolation. By leveraging advanced edge computing capabilities, it continuously processes localized data in real time, entirely bypassing the need for cloud dependencies or external server validation. This architectural decision not only guarantees ultra-low latency responses during critical emergencies but also mathematically eliminates the false alarm fatigue that historically plagues consumer-grade security systems. Furthermore, its continuous cross-validation with other active sensor nodes ensures that the system maintains absolute operational certainty before initiating any physical containment protocols or triggering the graduated emergency escalation ladder.
 
+
+Integrates RuView (MIT License) by ruvnet — github.com/ruvnet/RuView.
+
+The integration of RuView WiFi CSI provides the behavioral learning layer with a radically richer, continuous semantic signal than PIR or cameras ever could. Because RuView operates through walls without invading privacy, it can stream continuous semantic states (such as `room-active`, `no-movement`, `multi-room-transition`, and `someone-sleeping`) from highly sensitive areas like bedrooms and bathrooms. 
+
+This gives the behavioral layer absolute ground truth on a resident's sleep/wake boundaries, the exact timing of room transitions, and the physical intensity of their activities, completely free of the ethical nightmare of placing optical cameras in those spaces. This continuous RF telemetry is what allows SENTINEL to build a deeply accurate, predictive household routine model.
+
 ## How It Works
 
 1. The node continuously polls the primary sensors to establish a baseline reading.
