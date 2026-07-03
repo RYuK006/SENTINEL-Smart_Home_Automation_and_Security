@@ -19,6 +19,7 @@ Sentinel is not a sensor with a buzzer. It is a five-layer household safety oper
 │  Camera     │  Fusion Gate │  Adaptive Lighting     │
 │  Mic        │  Vibration  │  Deterrent Audio       │
 │  Vibration  │  Behaviour   │  Evidence Packaging    │
+│  WiFi CSI   │              │                        │
 ├─────────────┴──────────────┴────────────────────────┤
 │              ESCALATE                               │
 │  Owner Verification (Press 1/2) → Contact Chain    │
@@ -52,7 +53,8 @@ No single sensor ever triggers an action alone, and no emergency escalation fire
 *   **Sentinel Rover**: Autonomous indoor ground investigation bot providing mobile camera verification.
 
 ## Hardware Targets
-*   **Edge Inference**: ESP32-S3
+*   **Edge Inference (Vision/Audio)**: ESP32-S3
+*   **WiFi CSI Node (RuView)**: ESP32-S3 (Dedicated)
 *   **Local Hub Reasoning**: Raspberry Pi 4/5
 *   **Wearable**: nRF52
 *   **Satellite Fallback**: Iridium 9604-class module
@@ -61,6 +63,11 @@ No single sensor ever triggers an action alone, and no emergency escalation fire
 *   **Fully documented**: all features, use cases, architecture, product report
 *   **Prototype scope**: sensor fusion node, risk scoring engine, pan-tilt tracking, press-1/press-2 IVR demo via Twilio, Sentinel Band panic + vitals
 *   **Future scope**: Sentinel Air drone, satellite hardware integration, full multi-camera re-identification, Sentinel Swarm mesh
+
+
+## Integrations
+*   **[RuView](Integrations/RuView/RuView-Integration.md)**: SENTINEL integrates RuView (MIT License) by ruvnet — [github.com/ruvnet/RuView](https://github.com/ruvnet/RuView) to provide through-wall, camera-free human tracking, 17-keypoint pose estimation, and continuous biological vitals monitoring via WiFi Channel State Information (CSI).
+
 
 ---
 Copyright 2026 Aaron. All rights reserved.
