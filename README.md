@@ -71,3 +71,8 @@ No single sensor ever triggers an action alone, and no emergency escalation fire
 
 ---
 Copyright 2026 Aaron. All rights reserved.
+
+---
+
+# The strongest foundations are built long before anyone notices them.
+
